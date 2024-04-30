@@ -1,6 +1,5 @@
 #!/bin/bash
 # List name, id and IP of docker contaners. Show same for single container if id or name passed as parameter to script
-# extract container details
 extract_container_details() {
     container_info=$(docker inspect "$1" 2>/dev/null)
 
